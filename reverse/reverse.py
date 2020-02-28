@@ -52,5 +52,5 @@ class LinkedList:
       current.next_node = prev              # MOVE TO THE NEXT NODE TO START THE REVERSE
       prev = current                        # SWITCH THE POINTER 
       current = next_node
-    self.head = prev
+    self.head = prev                        # LIST HAS BEEN REVERSED 
     
