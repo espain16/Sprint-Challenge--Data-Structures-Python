@@ -15,7 +15,7 @@ class RingBuffer:
         list_buffer_contents = []
 
         # TODO: Your code here
-
+        #yes
         return list_buffer_contents
 
 # ----------------Stretch Goal-------------------
