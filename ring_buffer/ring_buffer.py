@@ -12,7 +12,7 @@ class RingBuffer:
             self.current = self.current.add_to_tail    # ADD ITEM TO THE FRONT OF THE LIST (tail)
             self.capacity += 1                          # INCREASE THE COUNT
         if self.storage == self.capacity:               # IF THE CACHE IS AT CAPACITY 
-            del self.storage[self.current.value[0]]     # DELETE FROM STORAGE (head)
+            self.storage.delete.[self.current.value[0]] # DELETE FROM STORAGE (head)
             self.current.remove_from_head()             # REMOVE THE OLDEST ITEM FROM TAIL 
             self.current = self.current.add_to_tail     # ADD THE NEW ITEM TO THE Tail OF THE LIST 
             self.capacity += 1                          # INCREASE THE CAPACITY 

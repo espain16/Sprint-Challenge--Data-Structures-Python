@@ -30,7 +30,7 @@ class LinkedList:
   def contains(self, value):
     if not self.head:
       return False
-    # get a reference to the node we're currently at; update this as we traverse the list
+      # get a reference to the node we're currently at; update this as we traverse the list
     current = self.head
     # check to see if we're at a valid node 
     while current:
@@ -44,4 +44,13 @@ class LinkedList:
 
   def reverse_list(self):
     # TO BE COMPLETED
-    pass
+
+    prev = None                             # IF THERE ISN'T A NODE BEHIND THE NODE THAT IS THE "HEAD"
+    current = self.head                     # CURRENT NODE IS THE HEAD
+    while(current != None):                 # IF THERE IS MORE THAN ONE NODE
+      next_node = current.next_node         # START REVERSE
+      current.next_node = prev              # MOVE TO THE NEXT NODE TO START THE REVERSE
+      prev = current                        # SWITCH THE POINTER 
+      current = next_node
+    self.head = prev
+    
